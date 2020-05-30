@@ -9,6 +9,7 @@
 # frozen_string_literal: true
 
 Product.delete_all
+Cart.delete_all
 Product.create!(title: 'CoffeeScript',
                 description:
     %(<p>
