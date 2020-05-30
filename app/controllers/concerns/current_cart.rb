@@ -6,7 +6,6 @@ module CurrentCart
   private
 
   def set_cart
-    binding.pry
     @cart = Cart.find(session[:cart_id])
   rescue ActiveRecord::RecordNotFound
     @cart = Cart.create
